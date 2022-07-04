@@ -3,6 +3,18 @@
 use Illuminate\Support\Facades\Facade;
 
 return [
+    /*
+    |--------------------------------------------------------------------------
+    | HRMS Storage Link
+    |--------------------------------------------------------------------------
+    |
+    | This value is the HRMS Stroage Link of your application. This value is used when the
+    | framework needs HRMS Storage Link
+    |
+    */
+
+    'hrms_storage' => env('APP_HRMS_STORAGE', ''),
+
 
     /*
     |--------------------------------------------------------------------------

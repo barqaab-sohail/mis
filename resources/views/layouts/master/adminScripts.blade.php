@@ -35,11 +35,6 @@
 <script src="{{asset('Massets/plugins/c3-master/c3.min.js') }}"></script>
 
 
-<!--CDN ChartJS 
- -->
-<script src="http://www.chartjs.org/dist/2.7.3/Chart.bundle.js"></script>
-<script src="http://www.chartjs.org/samples/latest/utils.js"></script>
-
 <!-- ============================================================== -->
 <!-- Style switcher -->
 <!-- ============================================================== -->
@@ -62,7 +57,6 @@
     
 
 @yield('scripts')
-<script src="{{ asset('vendor/datatables/buttons.server-side.js') }}"></script>
 @stack('scripts')
 <script src="{{asset('Massets/plugins/html5-editor/wysihtml5-0.3.0.js')}}"></script>
 <script src="{{asset('Massets/plugins/html5-editor/bootstrap-wysihtml5.js')}}"></script>
@@ -82,8 +76,6 @@
  <!-- chosen plugin -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.js"></script>
 
- <!-- js functions -->
-<script src="{{asset('functions/functions.js') }}"></script>
 
  <!-- Datatable Date formate(dd-mmm-yyyy) Sotring -->
 <script src="https://cdn.datatables.net/plug-ins/1.10.25/sorting/date-dd-MMM-yyyy.js"></script>
