@@ -49,11 +49,21 @@
 
 
 <!-- Charting library -->
-<script src="https://unpkg.com/echarts/dist/echarts.min.js"></script>
+<script src="https://unpkg.com/chart.js@^2.9.3/dist/Chart.min.js"></script>
 <!-- Chartisan -->
-<script src="https://unpkg.com/@chartisan/echarts/dist/chartisan_echarts.js"></script>
+<script src="https://unpkg.com/@chartisan/chartjs@^2.1.0/dist/chartisan_chartjs.umd.js"></script>
+<!-- chartjs-plugin-datalabels -->
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
 <!-- Your application script -->
-<script>
+<script >
+import {Chart} from 'https://unpkg.com/chart.js@^2.9.3/dist/Chart.min.js';
+
+
+Chart.register(ChartDataLabels);
+
+
+
   const ageChart = new Chartisan({
     el: '#ageChart',
     url: "@chart('age_chart')",
@@ -63,13 +73,15 @@
     el: '#ageChart2',
     url: "@chart('age_chart')",
     hooks: new ChartisanHooks()
-            .colors(['#4299E1','#FE0045','#C07EF1','#67C560','#ECC94B'])
-            .datasets('pie')
-           
-            .axis(false)
+        .datasets('pie')
+        .responsive()
+        .legend({ position: 'bottom' })
+    	.pieColors(),
+
+
   });
 
-
+ 
 
 </script>
 

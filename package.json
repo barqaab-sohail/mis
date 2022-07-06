@@ -27,6 +27,7 @@
         "@chartisan/chartjs": "^2.1.0",
         "admin-lte": "^3.2.0",
         "chart.js": "^2.9.4",
+        "chartjs-plugin-datalabels": "^2.0.0",
         "vue-axios": "^3.4.1",
         "vue-router": "^4.0.16"
     }
