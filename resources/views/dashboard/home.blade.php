@@ -52,16 +52,14 @@
 <script src="https://unpkg.com/chart.js@^2.9.3/dist/Chart.min.js"></script>
 <!-- Chartisan -->
 <script src="https://unpkg.com/@chartisan/chartjs@^2.1.0/dist/chartisan_chartjs.umd.js"></script>
+
 <!-- chartjs-plugin-datalabels -->
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
 <!-- Your application script -->
-<script >
-import {Chart} from 'https://unpkg.com/chart.js@^2.9.3/dist/Chart.min.js';
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0"></script>
 
-
-Chart.register(ChartDataLabels);
-
+<script>
 
 
   const ageChart = new Chartisan({
@@ -76,9 +74,7 @@ Chart.register(ChartDataLabels);
         .datasets('pie')
         .responsive()
         .legend({ position: 'bottom' })
-    	.pieColors(),
-
-
+    	.pieColors()
   });
 
  
